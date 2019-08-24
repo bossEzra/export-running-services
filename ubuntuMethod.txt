@@ -5,7 +5,7 @@
 -------------------
 
 #writes the .sh. first arg tells that each is a new line.
-printf '%s\n' 'sudo su' 'service --status-all' >sServ.sh
+printf '%s\n' 'sudo su' 'service --status-all 2>&1 | grep +' >sServ.sh
 
 #makes exe
 chmod +x sServ.sh
