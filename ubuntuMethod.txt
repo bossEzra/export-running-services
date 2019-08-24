@@ -1,0 +1,14 @@
+#Trying line by line on ubuntu for fun
+#The idea here is to write the basic shell script in the console.
+
+#enter line by line
+-------------------
+
+#writes the .sh. first arg tells that each is a new line.
+printf '%s\n' 'service --status-all' >sServ.sh
+
+#makes exe
+chmod +x sServ.sh
+
+#runs .sh and exports to txt.
+./sServ.sh >sServ.txt
