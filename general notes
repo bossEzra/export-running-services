@@ -3,4 +3,7 @@
 -Will also have to edit the vagrant file config.
 -This can be written and configured to export running services each time the vm spins up.
 
-<note> probably won't have time to learn the script before 4pm, but will have time to learn the method of implementation into vagrant. 
+<note> probably won't have time to learn the script before 4pm, but will have time to learn the method of implementation into vagrant.
+
+<note> to run the powershell script to a .txt file > (Get-Service | where {$_.Status -eq "Running"} | Out-File "C:\vagrant\services.txt")
+^^adding this last note because the .txt is a little easier to read than the .csv. 
